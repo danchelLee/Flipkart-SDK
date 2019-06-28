@@ -17,6 +17,7 @@ public class FlipKartAddress {
     private String state;
     private String landmark;
     private String sellerName;
+    private String stateName;
 
     public FlipKartAddress() {
     }
@@ -109,6 +110,14 @@ public class FlipKartAddress {
         this.sellerName = sellerName;
     }
 
+    public String getStateName() {
+        return stateName;
+    }
+
+    public void setStateName(String stateName) {
+        this.stateName = stateName;
+    }
+
     @Override
     public String toString() {
         return "FlipKartAddress{" +
@@ -123,6 +132,7 @@ public class FlipKartAddress {
                 ", state='" + state + '\'' +
                 ", landmark='" + landmark + '\'' +
                 ", sellerName='" + sellerName + '\'' +
+                ", stateName='" + stateName + '\'' +
                 '}';
     }
 }
