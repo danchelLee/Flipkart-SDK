@@ -80,6 +80,11 @@ public class FlipKartOrderItem {
      * 发送时间
      */
     private String dispatchByDate;
+
+    /**
+     * 交付时间
+     */
+    private String deliverByDate;
     /**
      * 标题
      */
@@ -335,6 +340,14 @@ public class FlipKartOrderItem {
         this.shippingPincode = shippingPincode;
     }
 
+    public String getDeliverByDate() {
+        return deliverByDate;
+    }
+
+    public void setDeliverByDate(String deliverByDate) {
+        this.deliverByDate = deliverByDate;
+    }
+
     @Override
     public String toString() {
         return "FlipKartOrderItem{" +
@@ -358,6 +371,7 @@ public class FlipKartOrderItem {
                 ", stateDocuments=" + stateDocuments +
                 ", subItems=" + subItems +
                 ", dispatchByDate='" + dispatchByDate + '\'' +
+                ", deliverByDate='" + deliverByDate + '\'' +
                 ", title='" + title + '\'' +
                 ", dispatchAfterDate='" + dispatchAfterDate + '\'' +
                 ", hold=" + hold +
